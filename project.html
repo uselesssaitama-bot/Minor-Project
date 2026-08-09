@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Chill Music & Study Website</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+     <video autoplay muted loop playsinline id="bg-video">
+    <source src="lofi-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo9.gif" alt="Lofi Logo">
+            <h2>Lofi Chill</h2>
+        </div>
+        <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+    <section id="home">
+
+    <div class="hero">
+
+        <h1>Escape Into Calm</h1>
+
+        <p>
+            Relax • Study • Sleep • Repeat
+        </p>
+
+        <a href="#music" class="hero-btn">
+            🎵 Start Listening
+        </a>
+
+    </div>
+    </section>
+    <section id="about">
+
+    <div class="about-card">
+
+        <h2>About Lofi Music</h2>
+
+        <p class="about-text">
+           The world beyond these walls is loud. Here, only the quiet remembers your name.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <img src="focus.jpg" alt="Focus">
+                <h3>Focus</h3>
+                <p>Study with relaxing beats.</p>
+            </div>
+
+            <div class="feature">
+                <img src="relax1.jpg" alt="Relax">
+                <h3>Relax</h3>
+                <p>Enjoy peaceful coffee vibes.</p>
+            </div>
+
+            <div class="feature">
+                <img src="sleep.jpg" alt="Sleep">
+                <h3>Sleep</h3>
+                <p>Calm music for better rest.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <section id="music">
+
+    <div class="music-container">
+
+        <!-- Main Player -->
+        <div class="music-card">
+
+            <div class="song-info">
+                <img id="cover" src="coffee2.jpg" alt="Cover">
+                <div class="text">
+                    <h2 id="title">Dreamscape</h2>
+                    <p id="artist">Lofi Cafe • Study Beats</p>
+                </div>
+
+                <span class="menu">&#8942;</span>
+            </div>
+
+            <div class="time">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+
+            <div class="progress">
+                <div class="bar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="prev">&#9198;</button>
+                <button id="play">&#9654;</button>
+                <button id="next">&#9197;</button>
+
+            <div class="volume-control">
+                <span id="volume-icon"></span>
+                <input type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1">
+            </div>
+            </div>
+
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+
+            <div  class="song-card"
+                data-title="Midnight Coding"
+                data-artist="Code Music"
+                data-cover="coding.jpg"
+                data-audio="coffeeAudio.opus">
+
+                <img  src="midnight1.jpg">
+                <div>
+                    <h3>Midnight Coding</h3>
+                    <p>Code Music</p>
+                </div>
+
+            </div>
+
+            <div class="song-card"
+                data-title="Rainy Night"
+                data-artist="Lofi Cafe • Rain Sounds"
+                data-cover="rain.jpg"
+                data-audio="rainyAudio.opus">
+
+                <img src="rain1.jpg">
+                <div>
+                    <h3>Rainy Night</h3>
+                    <p>Lofi Cafe</p>
+                </div>
+
+            </div>
+
+            <div class="song-card"
+                data-title="Coffee Time"
+                data-artist="Study Beats"
+                data-cover="coffee.jpg"
+                data-audio="coffeeAudio.opus">
+
+                <img src="coffee2.jpg">
+                <div>
+                    <h3>Coffee Time</h3>
+                    <p>Study Beats</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+<audio id="audio" preload="metadata"></audio> 
+</section>
+    <section id="contact">
+
+    <div class="contact-card">
+
+        <h2>Let's Connect</h2>
+
+        <p>📧 Email :2025-bcsit-162@gmail.com</p>
+
+        <p>📷 Instagram : @saitma_aadi</p>
+
+        <p>💻 GitHub : Aaditya_Chaudhary</p>
+
+        <p class="made">
+            Crafted with ❤️ using HTML, CSS & JavaScript
+        </p>
+
+    </div>
+    </section>
+    </main>
+    <script src="project.js"></script>
+</body>
+</html>
+
+
