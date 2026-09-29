@@ -176,7 +176,7 @@ body::before{
     background:#fff;
     border-radius:50%;
     touch-action: none;
-    transition: width 0.2s ease, height 0.2 ease;
+    transition: width 0.2s ease, height 0.2s ease;
 }
 .circle.dragging{
     width: 20px;
@@ -511,13 +511,14 @@ html{
     padding: 30px 20px;
   }
   .playlist {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .song-card {
     width: 100%;
-    max-width: 340px;
-  }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+.song-card {
+    width: 100%;
+}
   .contact-card {
     width: 92%;
     padding: 35px 25px;
